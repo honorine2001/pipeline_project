@@ -1,0 +1,5 @@
+body { font-family: Arial, sans-serif; padding: 30px; }
+main { max-width: 500px; margin: 0 auto; }
+label { display: block; margin: 8px 0; }
+button { margin-top: 10px; }
+.error { color: red; }

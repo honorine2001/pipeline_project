@@ -9,14 +9,11 @@ pipeline {
             }
         }
 
-        stage('Install Node.js') {
+        stage('Node.js Check') {
             steps {
-                sh '''
-                curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-                sudo apt-get install -y nodejs
-                node -v
-                npm -v
-                '''
+                // Just check Node.js and npm versions, no sudo needed
+                sh 'node -v'
+                sh 'npm -v'
             }
         }
 
